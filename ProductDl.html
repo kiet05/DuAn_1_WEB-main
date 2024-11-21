@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ProductDl.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navigation_bar">
+                <img src=".//img/image 5.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Đánh giá</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <form action="/search" method="GET" class="search-bar">
+                        <input type="text" name="query" placeholder="Nhập từ khóa tìm kiếm..." required>
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="product-container">
+                <div class="product-detail">
+                    <!-- Hình ảnh sản phẩm -->
+                    <div class="product-image">
+                        <img src="./images/sanpham.jpg" alt="Giày Thể Thao Cao Cấp">
+                    </div>
+        
+                    <!-- Thông tin sản phẩm -->
+                    <div class="product-info">
+                        <h1>Giày Thể Thao Cao Cấp</h1>
+                        <p class="product-description">
+                            Sở hữu thiết kế hiện đại, chất liệu cao cấp mang lại sự thoải mái và phong cách.<br/> Đôi giày hoàn hảo 
+                            cho những ai yêu thích sự năng động và thời trang.
+                        </p>
+                        <p class="product-price"><strong>Giá: </strong><span>1,200,000 VND</span></p>
+                        
+                        <div class="product-options">
+                            <label for="size">Kích cỡ:</label>
+                            <select id="size">
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                            </select>
+                            <label for="size">Màu sắc:</label>
+                            <select id="size">
+                                <option value="38">Đen</option>
+                                <option value="39">Đỏ</option>
+                                <option value="40">Vàng</option>
+                                <option value="41">Trắng</option>
+                                <option value="42">Xanh</option>
+                            </select>
+                        </div>
+                        
+                        <div class="product-buttons">
+                            <button class="btn-buy">Mua Ngay</button>
+                            <button class="btn-cart"><a href="Shopcart.html">Thêm Vào Giỏ</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

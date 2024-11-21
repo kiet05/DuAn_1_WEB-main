@@ -70,7 +70,7 @@
                 <table class="table table-bordered">
                     <thead class="table-dark">
                         <tr>
-                            <th>#</th>
+                            <th>id</th>
                             <th>Tên</th>
                             <th>Thao tác</th>
                         </tr>

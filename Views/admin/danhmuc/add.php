@@ -16,7 +16,7 @@
     <label for="exampleInputPassword1" class="form-label">Tên danh mục</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
-  <button type="submit" class="btn btn-primary">Thêm mới</button>
+  <button type="submit" class="btn btn-primary"><a href="index.php?cl"></a>Thêm mới</button>
 </form>
     
 </body>

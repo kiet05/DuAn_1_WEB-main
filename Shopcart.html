@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Shopcart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navigation_bar">
+                <img src=".//img/image 5.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Đánh giá</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <form action="/search" method="GET" class="search-bar">
+                        <input type="text" name="query" placeholder="Nhập từ khóa tìm kiếm..." required>
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2>Giỏ hàng</h2>
+            <div class="cart-container">
+              <div class="cart-items">
+                <!-- Item 1 -->
+                <div class="cart-item">
+                  <img src="./images/giay1.jpg" alt="Sản phẩm 1">
+                  <div class="item-details">
+                    <p class="item-name">Sản phẩm mẫu</p>
+                    <p class="item-color">Màu sắc: Đen</p>
+                    <p class="item-size">Kích cỡ: 43</p>
+                  </div>
+                  <div class="item-quantity">
+                    <input type="number" value="1" min="1">
+                  </div>
+                  <div class="item-price">1.000.000đ</div>
+                  <button class="remove-btn">Xóa</button>
+                </div>
+
+              </div>
+        
+              <div class="cart-summary">
+                <p>Tạm tính: <span>4.000.000đ</span></p>
+                <p>Phí vận chuyển: <span>50.000đ</span></p>
+                <p class="total">Tổng: <span>4.050.000đ</span></p>
+               <a href="thanhtoan.html"> <button class="checkout-btn">Đặt hàng</button></a>
+              </div>
+            </div>
+          </main>
+          <div id="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="img/image 5.png" alt="TechStore Logo" style="max-width: 150px;">
+                </div>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Về Chúng Tôi</h3>
+                        <p>Best shoues cung cấp các sản phẩm chất lượng cao với dịch vụ chuyên nghiệp. Chúng tôi cam kết mang lại sự hài lòng tối đa cho khách hàng với những sản phẩm tiên tiến nhất.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li><strong>Email:</strong> support@techstore.vn</li>
+                            <li><strong>Hotline:</strong> 1800-1234</li>
+                            <li><strong>Địa chỉ:</strong> 123 Đường ABC, TP. Hà Nội</li>
+                            <li><strong>Giờ mở cửa:</strong> 8:00 AM - 6:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Theo Dõi Chúng Tôi</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><img src="assets/facebook.png" alt="Facebook" title="Facebook"></a>
+                            
+                            <a href="#" class="social-icon"><img src="assets/instagram.png" alt="Instagram" title="Instagram"></a>
+                            <a href="#" class="social-icon"><img src="assets/youtube.png" alt="YouTube" title="YouTube"></a>
+                           
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liên Kết Nhanh</h3>
+                        <ul>
+                            <li><a href="#">Chính Sách Bảo Mật</a></li>
+                            <li><a href="#">Điều Khoản Dịch Vụ</a></li>
+                            <li><a href="#">Hỏi Đáp</a></li>
+                            <li><a href="#">Về Chúng Tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Best shoues. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
