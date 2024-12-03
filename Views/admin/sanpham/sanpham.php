@@ -63,7 +63,7 @@
                 
                 <!-- Thêm mới -->
                 <div class="mb-3">
-                    <a href="add-item.html" class="btn btn-primary"><i class="fas fa-plus"></i> Thêm mới</a>
+                    <a href="index.php?ctl=add" class="btn btn-primary"><i class="fas fa-plus"></i> Thêm mới</a>
                 </div>
         
                 <!-- Table -->
@@ -71,37 +71,39 @@
                     <thead class="table-dark">
                         <tr>
                             <th>#</th>
+                            <th>Ảnh</th>
                             <th>Tên</th>
+                            <th>Giá</th>
+                            <th>Số Lượng</th>
                             <th>Mô tả</th>
-                            <th>Ngày tạo</th>
+                            <th>Trang thái</th>
                             <th>Thao tác</th>
                         </tr>
                     </thead>
                     <tbody>
+                    <?php foreach($sanpham as $dm) : ?>
                         <tr>
-                            <td>1</td>
-                            <td>Sản phẩm A</td>
-                            <td>Mô tả sản phẩm A</td>
-                            <td>2024-01-01</td>
+                            <td><?= $dm['id'] ?></td>
                             <td>
-                                <a href="edit-item.html" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
-                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Xóa</button>
+                                <img src="<?= $dm['anh'] ?>" width="100" alt="">
+                            </td>
+                            <td><?= $dm['ten'] ?></td>
+                            <td><?= $dm['gia'] ?></td>
+                            <td><?= $dm['soluongton'] ?></td>
+                            <td><?= $dm['mota'] ?></td>
+                            <td><?= $dm['trangthai'] ?></td>
+                            <td>
+                                <a href="index.php?ctl=edit&id=<?= $dm['id'] ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
+                                <a onclick= "return confirm('bạn có muốn xóa không')" href="index.php?ctl=delete&id=<?= $dm['id'] ?>" class="btn btn-danger btn-sm"><i class="fas fa-edit"></i> Xóa</a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Sản phẩm B</td>
-                            <td>Mô tả sản phẩm B</td>
-                            <td>2024-02-15</td>
-                            <td>
-                                <a href="edit-item.html" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
-                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Xóa</button>
-                            </td>
-                        </tr>
+                       
+                        <!-- Thêm các dòng khác ở đây -->
+                         <?php endforeach ?>
                         <!-- Thêm các dòng khác ở đây -->
                     </tbody>
                 </table>
-            </div>
+            </div> 
         </div>
     </div>
 

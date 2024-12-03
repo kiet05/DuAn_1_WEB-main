@@ -8,17 +8,17 @@
     </head>
 </head>
 <body>
-<form action="index.php?ctl=store" method="post" enctype="multipart/form-data">
+<form action="" method="post" enctype="multipart/form-data">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Id danh mục</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+    <input type="text"  name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<?= $danhmuc['id'] ?>" disabled>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Tên danh mục</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="ten_danhmuc">
+    <input type="text" class="form-control" id="exampleInputPassword1" name="ten_danhmuc" value="<?= $danhmuc['ten_danhmuc'] ?>">
   </div>
-  <button type="submit" class="btn btn-primary">Thêm mới</button>
+  <button type="submit" class="btn btn-primary">Sửa</button>
+  <a href="index.php">Danh sách</a>
 </form>
-    
 </body>
 </html>
 

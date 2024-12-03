@@ -21,7 +21,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="sda.html">Quản trị</a>
+            <a class="navbar-brand" href="index.html">Quản trị</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,7 +63,7 @@
                 
                 <!-- Thêm mới -->
                 <div class="mb-3">
-                    <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Thêm mới</a>
+                    <a href="index.php?ctl=add" class="btn btn-primary"><i class="fas fa-plus"></i> Thêm mới</a>
                 </div>
         
                 <!-- Table -->
@@ -80,20 +80,12 @@
                         <tr>
                             <td><?= $dm['id'] ?></td>
                             <td><?= $dm['ten_danhmuc'] ?></td>
-                            
                             <td>
-                                <a href="edit-item.html" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
-                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Xóa</button>
+                                <a href="index.php?ctl=edit&id=<?= $dm['id'] ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
+                                <a onclick= "return confirm('bạn có muốn xóa không')" href="index.php?ctl=delete&id=<?= $dm['id'] ?>" class="btn btn-danger btn-sm"><i class="fas fa-edit"></i> Xóa</a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Sản phẩm B</td>
-                            <td>
-                                <a href="edit-item.html" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
-                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Xóa</button>
-                            </td>
-                        </tr>
+                       
                         <!-- Thêm các dòng khác ở đây -->
                          <?php endforeach ?>
                     </tbody>
